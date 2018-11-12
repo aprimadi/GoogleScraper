@@ -355,17 +355,17 @@ class GoogleParser(Parser):
             'us_ip': {
                 'container': '#center_col',
                 'result_container': 'div.g ',
-                'link': 'div.r > a:first-child::attr(href)',
+                'link': 'div.r a::attr(href)',
                 'snippet': 'div.s span.st::text',
-                'title': 'div.r > a:first-child::text',
+                'title': 'div.r a::text',
                 'visible_link': 'cite::text'
             },
             'de_ip': {
                 'container': '#center_col',
                 'result_container': 'li.g ',
-                'link': 'div.r > a:first-child::attr(href)',
+                'link': 'div.r a::attr(href)',
                 'snippet': 'div.s span.st::text',
-                'title': 'div.r > a:first-child::text',
+                'title': 'div.r a::text',
                 'visible_link': 'cite::text'
             },
             'de_ip_news_items': {
